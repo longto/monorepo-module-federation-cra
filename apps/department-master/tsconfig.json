@@ -1,0 +1,5 @@
+{
+  "extends": "typescript-config-mfv/tsconfig-react.json",
+  "exclude": ["node_modules", ".next", "out", "dist", "build"],
+  "include": ["./**/*.ts", "./**/*.tsx"]
+}

@@ -1,0 +1,35 @@
+{
+  "workbench.editor.wrapTabs": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.semi": false,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "files.eol": "\n",
+  "javascript.preferences.importModuleSpecifier": "shortest",
+  "javascript.validate.enable": true,
+  "typescript.preferences.importModuleSpecifier": "shortest",
+  "typescript.validate.enable": true,
+  "files.watcherExclude": {
+    "**/jest/*/**": true,
+    "**/.next/*/**": true
+  },
+  "search.exclude": {
+    "**/.next": true,
+    "**/jest": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "jestrunner.configPath": "jest.config.js",
+  "jestrunner.jestCommand": "yarn test:one",
+  "terminal.integrated.scrollback": 10000,
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

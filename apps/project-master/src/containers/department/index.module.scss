@@ -1,0 +1,12 @@
+@import 'styles/colors.scss';
+
+.primary {
+  border-bottom: 2px solid $green;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
