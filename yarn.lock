@@ -4683,6 +4683,23 @@ eslint-config-react-mfv@^1.0.0:
     eslint-plugin-react-hooks "4.6.0"
     eslint-plugin-simple-import-sort "^7.0.0"
 
+eslint-config-react-mfv@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-config-react-mfv/-/eslint-config-react-mfv-1.0.2.tgz#b9c10cd4eae7752a1bcc63d7d167bc6207cb562f"
+  integrity sha512-S8VTXrCiFRnMVi2iKRKLapcQ0EAqWG/7oENt4Z7V40fY6J2IUsCtgwOiYuLC+eQaqdTupOUBOIRhkEUokT9oCQ==
+  dependencies:
+    "@typescript-eslint/eslint-plugin" "5.28.0"
+    "@typescript-eslint/parser" "5.28.0"
+    eslint-config-airbnb "19.0.4"
+    eslint-config-airbnb-typescript "17.0.0"
+    eslint-config-prettier "8.5.0"
+    eslint-plugin-import "2.26.0"
+    eslint-plugin-jsx-a11y "6.5.1"
+    eslint-plugin-prettier "4.0.0"
+    eslint-plugin-react "7.30.0"
+    eslint-plugin-react-hooks "4.6.0"
+    eslint-plugin-simple-import-sort "^7.0.0"
+
 eslint-import-resolver-node@^0.3.6:
   version "0.3.6"
   resolved "https://registry.npmjs.org/eslint-import-resolver-node/-/eslint-import-resolver-node-0.3.6.tgz"

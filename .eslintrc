@@ -1,0 +1,9 @@
+{
+  "root": true,
+  "extends": ["react-mfv"],
+  "settings": {
+    "next": {
+      "rootDir": ["apps/*/"]
+    }
+  }
+}
