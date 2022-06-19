@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Department from 'src/containers/department'
+import Project from 'src/containers/project'
 
 import reportWebVitals from './reportWebVitals'
 
@@ -9,7 +9,7 @@ if (rootDOM) {
   const root = ReactDOM.createRoot(rootDOM)
   root.render(
     <React.StrictMode>
-      <Department />
+      <Project />
     </React.StrictMode>
   )
 }

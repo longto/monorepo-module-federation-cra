@@ -28,15 +28,14 @@
     "zustand": "^4.0.0-rc.1"
   },
   "scripts": {
-    "dev": "cross-env PORT=3001 craco start",
+    "dev": "cross-env PORT=3002 craco start",
     "build": "craco build",
-    "start": "serve -s build -l 3001",
+    "start": "serve -s build -l 3002",
     "test": "craco test",
     "eject": "react-scripts eject",
     "analyze": "cross-env ANALYZE=true yarn build",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore . && stylelint --ignore-path .gitignore '**/*.{css,scss,sass,js,ts,jsx,tsx}'",
-    "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore . --fix && stylelint --ignore-path .gitignore '**/*.{css,scss,sass,js,ts,jsx,tsx}' --fix",
-    "up-git": "yarn add moneyforwardvietnam/eslint-config-react-typescript-mfvhn"
+    "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore . --fix && stylelint --ignore-path .gitignore '**/*.{css,scss,sass,js,ts,jsx,tsx}' --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -73,8 +72,5 @@
     "swc-plugin-transform-import": "^1.2.0",
     "typescript-config-mfv": "^1.0.2",
     "webpack-bundle-analyzer": "^4.5.0"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "npx lint-staged"
   }
 }

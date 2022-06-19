@@ -3,6 +3,7 @@
   "exclude": ["node_modules", ".next", "out", "dist", "build"],
   "include": ["**/*.ts", "**/*.tsx"],
   "compilerOptions": {
-    "noEmit": true
+    "noEmit": true,
+    "baseUrl": "."
   }
 }

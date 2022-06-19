@@ -7,12 +7,12 @@ import { ProjectTable } from './components/project-table'
 import { ReactComponent as Logo } from './image/logo.svg'
 import styles from './index.module.scss'
 
-export default function Department() {
+export default function Project() {
   return (
     <div className={styles.primary}>
       <div className={styles.header}>
         <Logo width={40} />
-        <Button type="primary">Create department</Button>
+        <Button type="primary">Create project</Button>
       </div>
       <ProjectTable />
     </div>

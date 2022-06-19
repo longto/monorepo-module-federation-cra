@@ -4,5 +4,7 @@
   "include": ["**/*.ts", "**/*.tsx"],
   "compilerOptions": {
     "noEmit": true
-  }
+  },
+  "module": "es2020",
+  "moduleResolution": "node"
 }
