@@ -1,0 +1,7 @@
+/build/**
+/node_modules/**
+/.vscode/**
+/tests/**
+/public/**
+*.config.js
+.eslintrc.js
