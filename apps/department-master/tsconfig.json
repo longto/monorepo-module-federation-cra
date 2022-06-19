@@ -3,8 +3,7 @@
   "exclude": ["node_modules", ".next", "out", "dist", "build"],
   "include": ["**/*.ts", "**/*.tsx"],
   "compilerOptions": {
+    "baseUrl": ".",
     "noEmit": true
-  },
-  "module": "es2020",
-  "moduleResolution": "node"
+  }
 }
