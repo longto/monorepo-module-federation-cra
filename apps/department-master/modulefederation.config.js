@@ -1,7 +1,7 @@
 const deps = require('./package.json').dependencies
 
 module.exports = {
-  name: 'app2',
+  name: 'department',
   exposes: {
     './department': './src/containers/department',
   },
