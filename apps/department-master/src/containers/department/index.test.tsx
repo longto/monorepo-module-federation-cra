@@ -3,8 +3,8 @@ import React from 'react'
 
 import Department from '.'
 
-test('renders learn react link', () => {
+test('render department master', () => {
   render(<Department />)
-  const linkElement = screen.getByText(/learn react/i)
+  const linkElement = screen.getByText(/Create department/i)
   expect(linkElement).toBeInTheDocument()
 })

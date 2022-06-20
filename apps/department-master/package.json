@@ -6,7 +6,7 @@
     "dev": "cross-env PORT=3001 craco start",
     "build": "craco build",
     "start": "serve -s build -l 3001",
-    "test": "craco test",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "analyze": "cross-env ANALYZE=true yarn build",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore . && stylelint --ignore-path .gitignore '**/*.{css,scss,sass,js,ts,jsx,tsx}'",
@@ -16,7 +16,7 @@
     "@craco/craco": "^6.4.3",
     "@swc/core": "^1.2.204",
     "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
+    "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.2.1",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.7.13",
@@ -25,13 +25,13 @@
     "antd": "^4.21.2",
     "axios": "^0.27.2",
     "craco-less": "^2.0.0",
-    "craco-styled-jsx": "^1.0.1",
+    "jest-localstorage-mock": "^2.4.21",
+    "jest-location-mock": "^1.0.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "sass": "^1.52.3",
     "serve": "^13.0.2",
-    "styled-jsx": "^5.0.2",
     "swc-loader": "^0.2.3",
     "typescript": "^4.7.3",
     "ui": "*",
@@ -42,6 +42,11 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ]
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!(ui)).*\\.js$"
     ]
   },
   "browserslist": {
@@ -58,7 +63,7 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^6.2.1",
-    "@swc/core": "^1.2.203",
+    "@swc/core": "^1.2.204",
     "@swc/plugin-transform-imports": "^0.7.0",
     "craco-module-federation": "^1.1.0",
     "cross-env": "^7.0.3",

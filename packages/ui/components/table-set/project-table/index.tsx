@@ -1,5 +1,5 @@
-import Table from 'antd/es/table'
-import Tag from 'antd/es/tag'
+import Table from 'antd/lib/table'
+import Tag from 'antd/lib/tag'
 import React, { ReactNode } from 'react'
 
 import { locale } from './locale'

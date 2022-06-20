@@ -1,6 +1,6 @@
 import 'antd/dist/antd.less'
 
-import Button from 'antd/es/button'
+import Button from 'antd/lib/button'
 import React from 'react'
 import { ProjectTable } from 'ui'
 
