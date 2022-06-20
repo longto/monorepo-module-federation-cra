@@ -71,5 +71,6 @@
     "swc-plugin-transform-import": "^1.2.0",
     "typescript-config-mfv": "^1.0.2",
     "webpack-bundle-analyzer": "^4.5.0"
-  }
+  },
+  "proxy": "http://localhost:10000"
 }
