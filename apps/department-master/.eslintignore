@@ -3,4 +3,4 @@
 /.vscode/**
 /tests/**
 /public/**
-*.config.js
+*.js

@@ -3,5 +3,4 @@
 /.vscode/**
 /tests/**
 /public/**
-*.config.js
-.eslintrc.js
+*.js
