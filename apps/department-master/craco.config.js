@@ -1,14 +1,12 @@
 const CracoLess = require('craco-less')
-const CracoSwc = require('craco-swc')
 const CracoModuleFederation = require('craco-module-federation')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 
 const isAnalyze = !!process.env.ANALYZE
 
-module.exports = {
+const settings = {
   plugins: [
     { plugin: CracoModuleFederation },
-    { plugin: CracoSwc },
     {
       plugin: CracoLess,
       options: {
@@ -28,7 +26,19 @@ module.exports = {
           new BundleAnalyzerPlugin({ analyzerMode: 'server' })
         )
       }
+      webpackConfig.module.rules.push({
+        test: /\.tsx?$/,
+        exclude: /node_modules\/(?![ui])/,
+        use: {
+          loader: 'swc-loader',
+          options: {
+            parseMap: true,
+          },
+        },
+      })
       return webpackConfig
     },
   },
 }
+
+module.exports = settings
